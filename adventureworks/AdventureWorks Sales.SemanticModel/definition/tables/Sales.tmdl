@@ -6,6 +6,15 @@ table Sales
 			```
 		lineageTag: c2fe3283-9d89-4bee-b219-09de50cc38c5
 
+	measure 'Total Sales' = ```
+			
+			SUM ( Sales[Sales Amount] )
+			
+			```
+		lineageTag: 8cb13490-c3da-4cc4-bc3b-37945552b545
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
 	column SalesOrderLineKey
 		dataType: int64
 		isHidden
